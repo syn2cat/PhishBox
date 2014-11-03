@@ -37,8 +37,8 @@ cp -rf sensorscanner.sh website ${HOME_DIR}/
 pushd ${HOME_DIR}
 
 pushd website
-wget https://raw.github.com/HubSpot/odometer/${ODOMETER_VERSION}/odometer.js
-wget https://raw.github.com/HubSpot/odometer/${ODOMETER_VERSION}/odometer-theme-car.css
+wget https://raw.github.com/HubSpot/odometer/${ODOMETER_VERSION}/odometer.js -O odometer.js
+wget https://raw.github.com/HubSpot/odometer/${ODOMETER_VERSION}/themes/odometer-theme-car.css -O odometer-theme-car.css
 wget http://code.jquery.com/jquery-${JQUERY_VERSION}.min.js -O jquery.js
 touch counter.txt
 popd
