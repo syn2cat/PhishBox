@@ -1,0 +1,29 @@
+<html><body>
+<meta http-equiv="refresh" content="300">
+<center>
+<link rel="stylesheet" href="odometer-theme-car.css" />
+<style>
+.odometer {
+  font-size: 100px
+}
+</style>
+<script src="jquery.js"></script>
+<script src="odometer.js"></script>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div id="message">
+<h1>you have been phished</h1>
+You are number
+<div id="counter" class="odometer">123</div>
+to fall for this trap
+</div>
+
+<script>
+function updateOdometer() {
+  $.get("counter.txt", function( data ) {
+    document.getElementById('counter').innerHTML=data
+  });
+}
+setInterval(updateOdometer, 100)
+</script>
+</body>
+</html>
