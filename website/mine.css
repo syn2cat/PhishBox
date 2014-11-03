@@ -1,0 +1,12 @@
+.column-left{ float: left; width: 40%; }
+.column-right{ float: right; width: 40%; }
+.column-center{ display: inline-block; width: 20%; }
+
+.widthSetCenter {
+  max-width: 200px;
+}
+
+.widthSet {
+  max-width: 500px;
+}
+
